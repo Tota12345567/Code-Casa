@@ -1,0 +1,104 @@
+* {
+                                                                  margin: 0;
+                                                                  padding: 0;
+                                                                  box-sizing: border-box;
+                                                                }
+                                                                
+body {
+background-image: url("https://img.goodfon.com/wallpaper/big/a/6e/raznoe-chasy-chasiki.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+                                                                
+                                                               
+                                                                
+                                                                .center {
+                                                                  position: absolute;
+                                                                  top: 50%;
+                                                                  left: 50%;
+                                                                  transform: translate(-50%, -50%);
+                                                                  display: flex;
+                                                                  align-items: center;
+                                                                  justify-content: center;
+                                                                  height: 1rem; /* Decrease the center circle height */
+                                                                  width: 1rem; /* Decrease the center circle width */
+                                                                  background: #0b0b0b;
+                                                                  border-radius: 50%;
+                                                                }
+                                                                
+                                                                .center-second {
+                                                                  background: red;
+                                                                  height: 0.4rem; /* Decrease the second hand height */
+                                                                  width: 0.4rem; /* Decrease the second hand width */
+                                                                }
+                                                                
+                                                                .second-hand {
+                                                                  height: 7rem; /* Decrease the second hand height */
+                                                                  width: 0.1rem;
+                                                                  background: red;
+                                                                  transform: translateY(-2rem); /* Adjust the vertical position of the second hand */
+                                                                }
+                                                                
+                                                                /* Rest of your CSS for minute hand, hour hand, segments, marks, and numbers goes here */
+                                                                
+
+.minute-hand {
+height: 0;
+width: 1rem;
+border-bottom: 13rem solid black;
+border-right: 0.4rem solid transparent;
+border-left: 0.4rem solid transparent;
+transform: translateY(-4.5rem);
+}
+
+.hour-hand {
+height: 0;
+width: 1rem;border-bottom: 10rem solid black;
+border-right: 0.4rem solid transparent;
+border-left: 0.4rem solid transparent;
+ transform: translateY(-3rem);
+}
+
+.segments {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -100%);
+}
+
+.segment {
+position: absolute;
+top: 0;
+left: 0;
+height: 12.8rem;
+ width: 0px;
+ background: green;
+transform-origin: center top;
+}
+
+.mark {
+height: 1.2rem;
+ width: 1px;
+background: black;
+}
+
+.mark-hour {
+height: 1.2rem;
+transform: translateX(-2px);
+width: 4px;
+}
+
+.num {
+ position: absolute;
+top: 2.7rem;
+left: 50%;
+text-align: center;
+line-height: 0;
+font-size: 2rem;
+font-weight: 700;
+font-family: helvetica;
+}
